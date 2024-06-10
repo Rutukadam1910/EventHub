@@ -1,0 +1,124 @@
+@charset "ISO-8859-1";
+
+body {
+  background-image: url('/img/eventbg1.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+
+/* Make the navbar sticky */
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: #f8f9fa; /* Light background color */
+}
+
+/* Style navbar links as buttons */
+.navbar .nav-link {
+  padding: 0.5rem 1rem;
+  margin: 0 0.25rem;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: white !important;
+  border: 1px solid transparent;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navbar .nav-link:hover {
+  background-color: #0056b3;
+  color: white !important;
+}
+
+ .search-container {
+            position: relative;
+        }
+ #eventSearch {
+            width: 100%;
+            padding: 10px 40px; /* Add space for the icon */
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+.search-icon {
+            position: absolute;
+            top: 50%;
+            left: 10px;
+            transform: translateY(-50%);
+            color: #888;
+        }
+/* Event container styling */
+.event-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 20px;
+}
+
+/* Event box styling */
+.event-box {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  margin: 20px;
+  padding: 20px;
+  width: 300px; /* Fixed width */
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.event-box:hover {
+  transform: scale(1.05); /* Slightly enlarge the box */
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2); /* Enhance the shadow */
+  background-color: #f8f9fa; /* Change background color on hover */
+}
+
+.event-box img {
+  width: 75%;
+ 
+  border-radius: 10px 10px 10px 10px;
+}
+
+.event-title {
+  font-size: 1.5em;
+  margin: 10px 0;
+  font-weight: bold;
+}
+
+.event-description {
+  font-size: 1em;
+  margin: 10px 0;
+}
+
+.event-button {
+  background-color: #28a745; /* Bootstrap's primary button color */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.event-button:hover {
+  background-color: #218838; /* Darker shade for hover effect */
+}
+
+/* Event details styling */
+.event-details {
+  text-align: left; /* Align text to the left */
+  margin: 15px 0; /* Add margin to separate it from other content */
+  font-size: 0.9em; /* Slightly reduce the font size */
+}
+
+.event-details p {
+  margin: 5px 0; /* Add margin between paragraphs for better spacing */
+  line-height: 1.4; /* Improve readability */
+}
+
+.event-details strong {
+  color: #333; /* Slightly darker color for emphasis */
+}
+

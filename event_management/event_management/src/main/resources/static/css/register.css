@@ -1,0 +1,92 @@
+@keyframes neon-text {
+  0% {
+    color: #ff00ff; /* Neon pink */
+  }
+  50% {
+    color: #00ccff; /* Neon blue */
+  }
+  100% {
+    color: #ff00ff; /* Back to neon pink */
+  }
+}
+
+body {
+  background-color: #000; /* Neon black background */
+  color: #fff; /* White text color */
+  animation: neon-background 5s infinite alternate; /* Animated background color */
+  font-family: 'Comic Sans MS', cursive, sans-serif; /* Party vibe font style */
+}
+
+/* Form Container */
+form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background: #222; /* Dark neon black */
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1); /* Neon glow effect */
+  border-radius: 10px;
+  animation: neon-form 5s infinite alternate; /* Form animation */
+}
+
+@keyframes neon-form {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Input Field Styling */
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  background-color: #333; /* Dark neon black */
+  border: 1px solid #666; /* Lighter gray border */
+  border-radius: 5px;
+  box-sizing: border-box;
+  color: #fff; /* White text color */
+}
+
+/* Submit Button Styling */
+input[type="submit"] {
+  display: block;
+  margin: 0 auto; /* Align button to the center */
+  padding: 10px 20px;
+  background-color: #ff00ff; /* Neon pink */
+  color: #fff; /* White text color */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+  background-color: #ff0066; /* Lighter neon pink on hover */
+}
+
+/* Link Styling */
+a {
+  display: block;
+  text-align: center; /* Center the link */
+  margin-top: 10px;
+  color: #00ff00; /* Neon green */
+  text-decoration: none; /* Remove default underline */
+  animation: neon-text 5s infinite alternate; /* Neon text animation */
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Heading Animation */
+h1 {
+  text-align: center; /* Center the heading */
+  animation: neon-text 5s infinite alternate; /* Neon text animation */
+}

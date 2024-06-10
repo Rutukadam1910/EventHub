@@ -1,0 +1,78 @@
+@charset "ISO-8859-1";
+/* Styling the body for better font and background */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+}
+
+/* Styling the navbar */
+.navbar {
+    font-size: 1.1em;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Ensuring the navbar is always visible */
+.fixed-top {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1030;
+}
+
+/* Adding top padding to avoid content being hidden under the fixed navbar */
+.container-fluid {
+    padding-top: 80px;
+}
+
+/* Styling the table */
+.table {
+    border-collapse: separate;
+    border-spacing: 0 15px;
+    width: 100%;
+}
+
+.table th, .table td {
+    vertical-align: middle;
+    border: 1px solid #dee2e6;
+    padding: 0.75rem;
+    text-align: center; /* Align text to center */
+}
+
+.table th {
+    background-color: #f1f1f1;
+}
+
+/* Adding margin to the buttons inside the btn-group */
+.btn-group .btn {
+    margin-right: 5px;
+}
+
+/* Removing the margin-right for the last button */
+.btn-group .btn:last-child {
+    margin-right: 0;
+}
+
+/* Additional margin for table rows */
+.table tr {
+    margin-bottom: 10px;
+}
+
+/* Styling the headings */
+h1 {
+    font-family: 'Georgia', serif;
+    font-weight: bold;
+    color: #343a40;
+    text-align: center; /* Align the header text to center */
+}
+
+/* Responsive image in table */
+.table img {
+    width: 100px;
+    height: auto;
+}
+
+/* Responsive table wrapper */
+.table-responsive {
+    width: 100%;
+    overflow-x: auto;
+}

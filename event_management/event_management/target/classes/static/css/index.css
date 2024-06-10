@@ -1,0 +1,153 @@
+@charset "UTF-8";
+
+/* General body styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa; /* Light gray background */
+    overflow-x: hidden;
+}
+
+/* Navbar styling */
+.navbar {
+    background-color: #343a40; /* Dark gray navbar */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    font-family: 'FancyFont', cursive; /* Add fancy font */
+    animation: disco 1s infinite;
+}
+
+/* Section styling */
+section {
+    padding: 60px 20px;
+}
+
+/* Welcome section styling */
+#welcome {
+    background: #343a40; /* Dark gray background */
+    color: white;
+    padding: 80px 20px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+/* Features section styling */
+#features {
+    background: #f0f0f0; /* Light gray background */
+    padding: 80px 20px;
+    animation: slideIn 1s ease-in-out;
+}
+
+.feature-box {
+    border: 2px solid #ddd;
+    padding: 20px;
+    margin: 10px 0;
+    transition: transform 0.3s;
+}
+
+.feature-box:hover {
+    transform: scale(1.05);
+}
+
+/* College and Student section styling */
+#college, #student {
+    background: #f0f0f0; /* Light gray background */
+    padding: 80px 20px;
+    animation: slideIn 1s ease-in-out;
+}
+
+/* Buttons */
+button {
+    margin-top: 20px;
+    transition: background-color 0.3s, transform 0.3s;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3; /* Dark blue on hover */
+    transform: scale(1.05);
+    color: white; /* Change text color on hover */
+}
+
+a:hover {
+    transform: scale(1.05);
+    color: white; /* Change text color on hover */
+}
+
+/* Footer styling */
+footer {
+    background: #343a40; /* Dark gray background */
+    color: white;
+    padding: 20px 0;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-content a {
+    color: white;
+}
+
+.footer-content .social-icons {
+    margin-top: 10px;
+}
+
+.social-icons a {
+    margin: 0 10px;
+}
+
+/* Navbar animation for scrolling */
+.navbar.animate-out {
+    transform: translateY(-100%);
+    transition: transform 0.5s ease-in-out;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes disco {
+    0% { color: red; }
+    25% { color: blue; }
+    50% { color: green; }
+    75% { color: yellow; }
+    100% { color: red; }
+}
+
+#eventHubLogo {
+    font-family: 'FancyFont', cursive; /* Add fancy font */
+    animation: disco 1s infinite;
+}
+
+/* Add animation on scroll */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+section {
+    animation: fadeInUp 1s ease-in-out;
+}
